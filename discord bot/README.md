@@ -1,23 +1,47 @@
-# Simple discord bot
-This bot has only 3 commands available
+# Command discord bot
+```
+General commands:
+mad help                   - displays all the available commands
+mad clear / cl <amount>    - will delete the past messages with the amount specified
 
-## General commands:
-- /help - displays all the available commands
-- /clear amount - will delete the past messages with the amount specified
+Image commands:
+mad emoji <emoji>                  - will get the emoji
+mad sticker <sticker               - will get the sticker
+mad avatar <tag>                   - will get the avatar from the user
 
-## Image commands:
-- /search <keywords> - will change the search to the keyword
-- /get - will get the image based on the current search
+Music commands:
+mad p or play <keywords>       - finds the song on youtube and plays 
+                                 it in your current channel
+mad q or queue                 - displays the current music queue
+mad skip                       - skips the current song being played
+mad setch <id channel>         - to set channel for music
+mad leave or disconnect / dc
+mad shuffle
+mad loop current / queue
 
-## Music commands:
-- /p <keywords> - finds the song on youtube and plays it in your current channel
-- /q - displays the current music queue
-- /skip - skips the current song being played
 
-# install with docker
-If you have docker then you can run the following command and it will automatically pull the image and then run it
-`
-docker run -e TOKEN=your_token_here -d pabolo02345/discord_bot
+Polls & Voting:
+mad poll <question>                    - create a yes/no poll
+
+Giveaway:
+mad giveaway <prize> <duration_seconds> - start a giveaway with prize and duration
+
+Role Reaction:
+mad rolemenu                        - create role selection menu with reactions
+
+XP System:
+mad level                           - check your current XP level
+mad setrolelvl <level> <id role>
+mad removerolelvl <level> <id role>
+
+Auto Send:
+Instagram or tiktok link
+
+Info:
+mad serverinfo
+mad userinfo <tag>
+
+```
 `
 
 # bot.py
